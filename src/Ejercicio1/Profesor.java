@@ -1,6 +1,6 @@
 package Ejercicio1;
 
-public class Profesor extends Empleado {
+public class Profesor extends Empleado implements Comparable<Profesor> {
 
 	private String cargo;
 	private int antiguedadDocente;
@@ -33,6 +33,10 @@ public class Profesor extends Empleado {
 	}
 	public String toString() {
 		return super.toString() + " CARGO: " + cargo + " - ANTIGUEDAD: " + antiguedadDocente;
+	}
+	
+	public int compareTo(Profesor otro) {
+		return Integer.compare(otro.antiguedadDocente, this.antiguedadDocente);
 	}
 	
 }
