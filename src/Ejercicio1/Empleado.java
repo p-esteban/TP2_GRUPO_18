@@ -22,14 +22,12 @@ public class Empleado {
         this.edad = edad;
     }
     
-
     public static int devuelveProximoID()
     {
     	return contador+1;
     	
     }
     
-   
 	public static int getContador() {
 		return contador;
 	}
