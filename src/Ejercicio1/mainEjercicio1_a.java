@@ -23,5 +23,15 @@ public class mainEjercicio1_a {
             Profesor profe = iterador.next();
             System.out.println(profe);
         }
+        
+        System.out.println("=== Comparacion de Profesores ===");
+        Profesor profesor1 = new Profesor("Alejandro",30,"Titular",5);
+        Profesor profesor2 = new Profesor("Alejandro",30,"Titular",5);
+        
+        if(profesor1.equals(profesor2)) 
+        	System.out.println("Es el mismo profesor");
+        else 
+        	 System.out.println("No es el mismo profesor");
+        
     }
 }
