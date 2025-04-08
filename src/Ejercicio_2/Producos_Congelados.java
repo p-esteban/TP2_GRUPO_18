@@ -22,4 +22,12 @@ public class Producos_Congelados extends Producto{
 	public void setTemperatura(int temperatura) {
 		this.temperatura = temperatura;
 	}
+
+	@Override
+	public String toString() {
+		return "temperatura recomendada: " + temperatura + " °C";
+	}
+	
+	
+	
 }

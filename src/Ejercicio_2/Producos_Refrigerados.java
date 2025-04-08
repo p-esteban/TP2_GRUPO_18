@@ -22,4 +22,12 @@ public class Producos_Refrigerados extends Producto{
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
+
+	@Override
+	public String toString() {
+		return "Codigo: " + codigo;
+	}
+	
+	
+	
 }
